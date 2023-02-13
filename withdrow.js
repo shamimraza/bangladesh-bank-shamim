@@ -5,6 +5,14 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
     const newWithDrawAmount = parseFloat(newWithDrawAmountFieldString);
     //console.log(newWithDrawAmount);
     //step-3: 
+
+    withdrawField.value = '';
+
+    if(isNaN(newWithDrawAmount)){
+        alert('please provied a valid number')
+        return;
+    }
+
     const withDrawTotalElement = document.getElementById('withdraw-total');
     const previousWithdrawTotalString = withDrawTotalElement.innerText;
     const previousWithdrawTotal = parseFloat(previousWithdrawTotalString);
@@ -17,7 +25,7 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
     const previousBalanceTotalString = balanceTotalElement.innerText;
     const previousBalanceTotal = parseFloat(previousBalanceTotalString);
 
-    withdrawField.value = '';
+   
 
     if (newWithDrawAmount > previousBalanceTotal) {
         alert('bap er bank a taka nai bujla bapu');
