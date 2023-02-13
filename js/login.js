@@ -9,7 +9,7 @@ document.getElementById('btn-submit').addEventListener('click', function () {
     const password = passField.value;
     // danger ata mane / kono prokar ata use kora jabe na
     // step-4: valid/ invalid check
-    if (email === 'shamimraza411@gmail.com' && password === '01971700269') {
+    if (email === 'shamimraza411@gmail.com' && password === '01747435243') {
         window.location.href = 'bank.html';
     }
     else {
